@@ -6,6 +6,7 @@ import UpdatePage from "./Pages/UpdatePage";
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<Login />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/update" element={<UpdatePage />} />
