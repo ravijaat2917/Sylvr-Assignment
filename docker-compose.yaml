@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+backend:
+build:
+context: './Dockerfile'
+dockerfile: Dockerfile
+ports:
+  - 8080:8080
+container_name: node-container
+networks:
+  - mern-stack-network
+volumes:
+  - ./node-docker:/app
+environment:
+- './.env'
